@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class PageObjectModel {
 
-    private SelenideElement ProfileButton = $(By.xpath("/html/body/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div"));
+    private SelenideElement ProfileButton = $(By.xpath("//div[@class='tm-dropdown']"));
     private SelenideElement EnterButton = $(By.className("tm-user-menu__auth-button"));
     private SelenideElement EmailForm = $(By.id("email_field"));
     private SelenideElement PasswordForm = $(By.id("password_field"));
@@ -43,7 +43,6 @@ public class PageObjectModel {
     public SelenideElement getUserNickName(){
         return UserNickName;
     }
-
 }
 
 

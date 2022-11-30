@@ -23,7 +23,7 @@ public class LoginTest{
         pageModel.getPassword().setValue("selenidetest1234");
         pageModel.pressSubmit().click();
         pageModel.getProfileImage().click();
-        pageModel.getUserNickName().shouldBe(Condition.visible);
+        pageModel.getUserNickName().shouldHave(Condition.text("@qqq131"));
     }
 }
 
